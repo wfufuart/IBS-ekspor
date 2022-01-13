@@ -1,0 +1,45 @@
+/* CSS Document */
+body {
+	min-height: 100vh;
+}
+
+.slider {
+	;
+}
+
+.slider h3,
+.slider h5 {
+	color: #FFFFFF;
+	text-shadow: 1px 1px 3px rgba(0,0,0, 0.9)
+}
+
+.about p {
+	font-size: 13pt;
+}
+.clients h3 {
+
+	text-shadow: 1px 1px 3px rgba(0,0,0, 0.5)
+}
+
+.parallax-container {
+	height: 100%;
+}
+
+.parallax img {
+	filter: grayscale();
+	opacity: 0.5
+}
+
+.card {
+	height: 350px
+}
+
+
+section, footer {
+	padding: 5px 0;
+}
+
+
+
+/*desktop mode*/
+
