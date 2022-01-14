@@ -102,11 +102,11 @@
 			
 <!--			Prority -->
 			<section id="priority" class="priority grey lighten-3 scrollspy">
-					<div class="parallax-container scrollspy" id="clients">
+<!-- 					<div class="parallax-container scrollspy" id="clients">
 						<div class="parallax">
 							<img src="img/ani4.jpg"
 						</div>
-					</div>
+					</div> -->
 
 					<div class="container">
 						<div class="row">
@@ -229,19 +229,19 @@
 									<div class="card-panel">
 										<h5>Please fill out this form</h5>
 										<div class="input-field">
-											<input type="text" name="name" id="namasiswa" required class="validate">
-											<label for="namasiswa">Name</label>
+											<input type="text" name="name" id="name" required class="validate">
+											<label for="name">Name</label>
 										</div>
 										<div class="input-field">
-											<input type="email" name="email" id="Email" class="validate">
+											<input type="email" name="email" id="email" class="validate">
 											<label for="email">Email</label>
 										</div>
 										<div class="input-field">
-											<input type="number" name="phone" id="Phone">
+											<input type="number" name="phone" id="phone">
 											<label for="phone">Phone Number</label>
 										</div>
 										<div class="input-field">
-											<textarea name="message" id="Message" class="materialize-textarea"></textarea>
+											<textarea name="message" id="message" class="materialize-textarea"></textarea>
 											<label for="message">Message</label>
 										</div>
 										<input type="hidden" name="noWa" value="6285797492497">
@@ -279,6 +279,33 @@
 					</div>
 				</section>
 <!--				akhir our team -->
+				
+<!-- 				 send wa -->
+				<span
+					onClick="gotowhatsapp()"
+					target="_blank"
+					class="float"
+					style="
+					  position: fixed;
+					  width: 30px;
+					  height: 30px;
+					  bottom: 70px;
+					  right: 65px;
+					  color: #fff;
+					  border-radius: 20px;
+					  text-align: center;
+					  cursor: pointer;
+					  box-shadow: 2px 2px 3px #999;
+					"
+					>
+					<img
+					  src="https://trickuweb.com/whatsapp.png"
+					  alt=""
+					  height="40px"
+					  width="40px"
+					/>
+				</span>
+<!-- 				 akhir send wa-->
 				
 <!--				footer -->
 				<footer class="white-text center" style="background-color: #179A08">
@@ -319,6 +346,27 @@
 		  const dropdown = document.querySelectorAll('.dropdown-trigger');
 		  M.Dropdown.init(dropdown)
 		</script>
+				
+		<!--		script send wa -->
+		<script>
+			function gotowhatsapp() {
+
+				var name = document.getElementById("name").value;
+				var phone = document.getElementById("phone").value;
+				var email = document.getElementById("email").value;
+				var message = document.getElementById("message").value;
+
+				var url = "https://wa.me/6285255559847?text=" 
+				+ "Name: " + name + "%0a"
+				+ "Phone: " + phone + "%0a"
+				+ "Email: " + email  + "%0a"
+				+ "message: " + message; 
+
+				window.open(url, "_blank").focus();
+			}
+		</script>
+	  
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 		
 		
     </body>
