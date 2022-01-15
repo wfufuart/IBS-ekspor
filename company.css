@@ -1,0 +1,59 @@
+/* CSS Document */
+body {
+	min-height: 100vh;
+}
+
+.slider {
+	
+}
+
+/*
+.slider h3 {
+	color: #47360B;
+	text-shadow: 1px 1px 3px rgba(0,0,0, 0.9)
+}
+*/
+.slider h3,
+.slider h5 {
+	color: white;
+	text-shadow: 1px 1px 4px rgba(0,0,0, 5)
+}
+
+.about p {
+	font-size: 13pt;
+}
+.clients h3 {
+
+	text-shadow: 1px 1px 3px rgba(0,0,0, 0.5)
+}
+
+.parallax-container {
+	height: 100%;
+}
+
+.parallax img {
+	filter: brightness();
+	opacity: 0.5
+}
+
+.isi tr {
+	shape-margin: 10px;
+}
+
+.card {
+	height: 370px
+}
+
+
+section {
+	padding: 0px 0;
+}
+
+footer {
+	padding-top: 5px 0;
+	height: 35px;
+}
+
+
+/*desktop mode*/
+
